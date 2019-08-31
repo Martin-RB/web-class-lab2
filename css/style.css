@@ -10,28 +10,57 @@ header{
 	text-align: center;
 }
 
-nav{
-	width: 100%;
-	height: 40px;
-	background-color: #93a7ff;
+section{
+	margin-top: 15px;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
 }
+
 
 .logo{
 	float: right;
-	width: 180px;
-	height: 65px;
+	width: 200px;
+	max-height: 50px;
+	/*min-height: 65px;*/
 	margin-left: 25px;
 	margin-bottom: 10px;
 }
 
-nav > *{
-	width: 24.6%;
-	display: inline-block;
-	text-align: center;
+nav{
+	width: 100%;
 	height: 40px;
-	line-height: 40px;
-	text-decoration: none;
+	background-color: #93a7ff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
+
+nav > *{
+	width: 55%;
+	text-decoration: none;
+	text-align: center;
+	line-height: 35px;
+}
+li{
+	border-top: 3px dotted #171717;
+    padding-top: 30px;
+}
+
+.separated{
+	display: flex;
+}
+
+.left{
+	width: 70%;
+}
+
+.right{
+	width: 30%;
+	display: flex;
+	justify-content: center;
+}
+
 nav > *:hover{
 	background-color: #4164ff;
 	color: white;
